@@ -89,5 +89,5 @@ Start with the checkout case study above. Then review the [risk-based testing ap
 Available for QA Engineer, Software Test Engineer, and Quality Engineer opportunities.
 
 - GitHub: [github.com/Jacqueline05](https://github.com/Jacqueline05)
-- LinkedIn: **Add your LinkedIn URL here**
-- Email: **Add your professional email here**
+- LinkedIn: Jacqueline Suling
+- Email: [jacqsuling@gmail.com](mailto:jacqsuling@gmail.com)
