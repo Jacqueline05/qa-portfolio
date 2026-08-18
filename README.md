@@ -1,6 +1,42 @@
-# QA Testing Portfolio
+# Jacqueline Suling Balan — QA Engineer
 
-A collection of practical software quality-assurance work samples. The examples use a fictional e-commerce application so they can be reviewed without exposing confidential company information.
+> I help teams release software with confidence by finding risks early, communicating defects clearly, and building focused coverage around real customer journeys.
+
+[![Portfolio](https://img.shields.io/badge/portfolio-QA%20testing-6d28d9)](https://github.com/Jacqueline05/qa-portfolio)
+[![Focus](https://img.shields.io/badge/focus-quality%20engineering-0f766e)](https://github.com/Jacqueline05/qa-portfolio)
+
+## What I bring
+
+- **Risk-based testing:** prioritize the failures that can cost customers money, trust, or access.
+- **Full workflow coverage:** connect UI behavior, API responses, data, and release risk.
+- **Actionable communication:** write bug reports that developers can reproduce and fix quickly.
+- **Quality mindset:** test unhappy paths, recovery behavior, accessibility, and cross-device experiences—not only the happy path.
+
+## Featured case study: checkout reliability
+
+The ShopEasy checkout examples tell one complete QA story:
+
+1. The [test plan](samples/01-test-plan.md) defines scope, risks, and release criteria.
+2. The [test cases](samples/03-test-cases.md) cover success, validation, and declined payment.
+3. The [bug reports](samples/04-bug-reports.md) demonstrate evidence-based defect reporting.
+4. The [API cases](samples/08-api-test-cases.md) verify idempotency and authorization.
+5. The [test summary](samples/13-test-summary-report.md) makes a clear go/no-go recommendation.
+6. The [incident review](samples/15-incident-review.md) turns a production failure into preventive action.
+
+This is the kind of connected thinking I bring to a QA engineering team.
+
+## Skills demonstrated
+
+| Area | Evidence in this portfolio |
+|---|---|
+| Manual testing | Test plans, scenarios, cases, exploratory charter |
+| Defect management | Reproducible bug reports with severity, impact, and evidence |
+| API testing | REST coverage, status codes, schemas, negative cases, idempotency |
+| Regression and release | Prioritized checklist, traceability matrix, test summary |
+| Accessibility | Keyboard, focus, error messaging, zoom, contrast checks |
+| Mobile testing | Device/browser matrix and responsive checks |
+| Test strategy | Risk scoring, data strategy, entry/exit criteria |
+| Quality improvement | Post-release incident review and corrective actions |
 
 ## Work samples
 
@@ -22,12 +58,24 @@ A collection of practical software quality-assurance work samples. The examples 
 | 14 | [Risk-Based Testing](samples/14-risk-based-testing.md) | Risk scoring and test prioritization |
 | 15 | [Post-release Incident Review](samples/15-incident-review.md) | Root cause, containment, prevention |
 
+## Automation sample
+
+See [`automation/checkout.spec.ts`](automation/checkout.spec.ts) for a Playwright-style end-to-end test demonstrating stable locators, API-backed setup, and assertions around a critical customer journey.
+
 ## Application under test
 
 **ShopEasy** is a fictional online store with product search, accounts, cart, checkout, payments, order history, and an administrator product catalog.
 
-All data and defects are fictional examples created for demonstration purposes.
+All data and defects are fictional examples created for demonstration purposes. No confidential company information is included.
 
 ## How to review
 
-Start with the test plan, then review the test cases and bug reports. The later samples show how QA work connects to API validation, accessibility, release reporting, and continuous improvement.
+Start with the checkout case study above. Then review the [risk-based testing approach](samples/14-risk-based-testing.md) and [test data plan](samples/12-test-data-plan.md) to see how I think about coverage, repeatability, and release confidence.
+
+## Contact
+
+Available for QA Engineer, Software Test Engineer, and Quality Engineer opportunities.
+
+- GitHub: [github.com/Jacqueline05](https://github.com/Jacqueline05)
+- LinkedIn: **Add your LinkedIn URL here**
+- Email: **Add your professional email here**
