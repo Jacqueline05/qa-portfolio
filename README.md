@@ -53,6 +53,16 @@ This portfolio demonstrates how I work as part of an Agile delivery team:
 
 This experience gives me a broader debugging perspective: I can investigate not only what the UI displays, but also the API, database, logs, and infrastructure behind it.
 
+### Programmer — Geospatial and Web Solutions
+
+**September 2022 – November 2022**
+
+- Deployed geospatial data infrastructure using Docker, PostGIS, GeoNode, and Ubuntu.
+- Developed survey tools and web modules using Flutter, Dart, Android Studio, and web technologies.
+- Worked across application code, databases, containers, and Linux environments to deliver working technical solutions.
+
+This early software engineering experience supports my QA work by helping me understand application architecture, data flow, deployment environments, and the practical impact of defects.
+
 ## Testing approach
 
 ```text
