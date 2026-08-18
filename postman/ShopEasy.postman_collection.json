@@ -1,0 +1,71 @@
+{
+  "info": {
+    "name": "ShopEasy QA API Collection",
+    "description": "Fictional API checks for catalog, cart, and order workflows. Uses safe environment variables and no real credentials.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.example.test"
+    },
+    {
+      "key": "productId",
+      "value": "SKU-TEST-001"
+    },
+    {
+      "key": "idempotencyKey",
+      "value": "portfolio-run-001"
+    }
+  ],
+  "item": [
+    {
+      "name": "Search products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/products?q=shoe",
+          "host": ["{{baseUrl}}"],
+          "path": ["products"],
+          "query": [{ "key": "q", "value": "shoe" }]
+        }
+      }
+    },
+    {
+      "name": "Add product to cart",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"productId\":\"{{productId}}\",\"quantity\":1}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/cart/items",
+          "host": ["{{baseUrl}}"],
+          "path": ["cart", "items"]
+        }
+      }
+    },
+    {
+      "name": "Create order with idempotency",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Idempotency-Key", "value": "{{idempotencyKey}}" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"paymentToken\":\"tok_test_approved\",\"shippingAddress\":{\"postalCode\":\"10001\"}}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders",
+          "host": ["{{baseUrl}}"],
+          "path": ["orders"]
+        }
+      }
+    }
+  ]
+}

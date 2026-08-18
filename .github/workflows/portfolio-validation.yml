@@ -1,0 +1,26 @@
+name: Portfolio validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate Postman collection JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('postman/ShopEasy.postman_collection.json', 'utf8')); console.log('Postman collection is valid JSON')"
+
+      - name: Check required portfolio folders
+        run: |
+          test -d test-cases
+          test -d bug-reports
+          test -d api-testing
+          test -d automation-scripts
+          test -f README.md

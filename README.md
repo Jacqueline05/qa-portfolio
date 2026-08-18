@@ -5,6 +5,41 @@
 [![Portfolio](https://img.shields.io/badge/portfolio-QA%20testing-6d28d9)](https://github.com/Jacqueline05/qa-portfolio)
 [![Focus](https://img.shields.io/badge/focus-quality%20engineering-0f766e)](https://github.com/Jacqueline05/qa-portfolio)
 
+## Quick navigation
+
+- [Professional profile](#professional-profile)
+- [What I bring](#what-i-bring)
+- [Featured case study](#featured-case-study-checkout-reliability)
+- [Skills and tools](#skills-and-tools)
+- [Work samples](#work-samples)
+- [Automation and API assets](#automation-and-api-assets)
+- [QA process](#qa-process)
+- [Repository structure](#repository-structure)
+- [Contact](#contact)
+
+## Professional profile
+
+I am building practical experience across manual testing, API testing, UI automation, accessibility, mobile compatibility, defect management, and release quality. This portfolio demonstrates how I would work as part of an Agile delivery team:
+
+- Clarify acceptance criteria and identify risks before implementation is complete.
+- Design coverage around critical user journeys and failure modes.
+- Combine exploratory testing with repeatable regression checks.
+- Report defects with clear impact, evidence, reproduction steps, and priority.
+- Collaborate with developers and product owners on risk-based release decisions.
+- Improve the test process after incidents instead of treating defects as isolated events.
+
+## Testing approach
+
+```text
+Understand requirements → Identify risk → Design coverage
+        ↓                         ↓
+  Exploratory testing       API and UI validation
+        ↓                         ↓
+  Report and triage → Regression → Release recommendation
+                                      ↓
+                              Learn and improve
+```
+
 ## What I bring
 
 - **Risk-based testing:** prioritize the failures that can cost customers money, trust, or access.
@@ -38,6 +73,19 @@ This is the kind of connected thinking I bring to a QA engineering team.
 | Test strategy | Risk scoring, data strategy, entry/exit criteria |
 | Quality improvement | Post-release incident review and corrective actions |
 
+## Skills and tools
+
+| Capability | Portfolio evidence | Typical tools |
+|---|---|---|
+| Test design | Plans, scenarios, cases, checklists | Markdown, Jira-style workflows |
+| UI automation | Critical checkout smoke test | Playwright, TypeScript |
+| API testing | REST plan, negative cases, idempotency | Postman, REST clients |
+| Defect reporting | Reproducible reports and triage details | Jira-style bug lifecycle |
+| Accessibility | Keyboard, focus, error, zoom, contrast review | Browser DevTools, screen readers |
+| Compatibility | Mobile device and browser matrix | Chrome, Edge, Safari, responsive viewports |
+| Release quality | Traceability, risk scoring, summary report | CI/CD quality gates |
+| Test data | Synthetic users, products, coupons, payments | Fixtures, API setup, reset strategy |
+
 ## Work samples
 
 | # | Sample | Skills demonstrated |
@@ -58,9 +106,39 @@ This is the kind of connected thinking I bring to a QA engineering team.
 | 14 | [Risk-Based Testing](test-cases/14-risk-based-testing.md) | Risk scoring and test prioritization |
 | 15 | [Post-release Incident Review](bug-reports/15-incident-review.md) | Root cause, containment, prevention |
 
-## Automation sample
+## Automation and API assets
 
 See [`automation-scripts/checkout.spec.ts`](automation-scripts/checkout.spec.ts) for a Playwright-style end-to-end test demonstrating stable locators, API-backed setup, and assertions around a critical customer journey.
+
+The [`postman/`](postman/) folder contains a safe, fictional REST collection for catalog, cart, and order validation. The collection uses environment variables rather than real credentials or payment data.
+
+The [portfolio validation workflow](.github/workflows/portfolio-validation.yml) checks that the repository's JSON assets remain valid whenever changes are pushed or opened as a pull request.
+
+## QA process
+
+### Before testing
+
+- Review requirements, acceptance criteria, designs, and dependencies.
+- Identify high-impact risks such as payment, authorization, data loss, and accessibility.
+- Define test data, environments, entry criteria, and exit criteria.
+
+### During testing
+
+- Start with smoke coverage before deeper functional testing.
+- Combine positive, negative, boundary, exploratory, and recovery scenarios.
+- Validate both user-visible behavior and API responses.
+- Record actual results, evidence, environment, and defect impact.
+
+### Before release
+
+- Review critical-path regression results and unresolved defects.
+- Confirm traceability for high-risk requirements.
+- Communicate residual risk and make a clear release recommendation.
+- Preserve repeatable tests and test data for the next iteration.
+
+## Portfolio assumptions and limitations
+
+ShopEasy is a fictional e-commerce application created for demonstration. The API endpoints, payment numbers, order IDs, and defects are examples only. The Playwright and Postman assets show test design and structure; they are not connected to a public production system.
 
 ## Repository structure
 
@@ -71,7 +149,9 @@ qa-portfolio/
 ├── api-testing/         # REST API plans and test cases
 ├── accessibility/       # WCAG-focused review
 ├── reports/             # Release and test summary reporting
-└── automation-scripts/  # Playwright examples
+├── automation-scripts/  # Playwright examples
+├── postman/             # API collection with safe placeholders
+└── .github/workflows/   # Portfolio validation in CI
 ```
 
 ## Application under test
