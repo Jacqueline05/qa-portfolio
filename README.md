@@ -19,7 +19,9 @@
 
 ## Professional profile
 
-I am building practical experience across manual testing, API testing, UI automation, accessibility, mobile compatibility, defect management, and release quality. This portfolio demonstrates how I would work as part of an Agile delivery team:
+I am a Quality Assurance Engineer with 3+ years of experience across enterprise manual testing, test automation, database validation, Linux systems, and CI/CD workflows. My approach combines structured test design with exploratory investigation and root-cause analysis.
+
+This portfolio demonstrates how I work as part of an Agile delivery team:
 
 - Clarify acceptance criteria and identify risks before implementation is complete.
 - Design coverage around critical user journeys and failure modes.
@@ -27,6 +29,29 @@ I am building practical experience across manual testing, API testing, UI automa
 - Report defects with clear impact, evidence, reproduction steps, and priority.
 - Collaborate with developers and product owners on risk-based release decisions.
 - Improve the test process after incidents instead of treating defects as isolated events.
+
+## Professional experience
+
+### Quality Assurance Engineer — Enterprise Technology Environment
+
+**September 2024 – Present**
+
+- Execute end-to-end manual, exploratory, functional, smoke, regression, and risk-based testing.
+- Design test plans and detailed test cases aligned with quality and compliance expectations.
+- Build and maintain Python-based Automated Test Frameworks using pytest, Playwright, and Cucumber/BDD.
+- Perform database-level validation with SQL and MySQL tools to verify data integrity, schema compliance, and state persistence.
+- Manage test cases, sprint work, and defect lifecycles using Azure DevOps and Jira.
+- Investigate logs, database records, and test behavior to identify root causes and reduce flaky tests.
+
+### Systems Engineer
+
+**January 2023 – August 2024**
+
+- Administer Linux environments and investigate system, service, and network issues.
+- Create Bash and Perl scripts for log parsing and repeatable operational tasks.
+- Support directory services, access control, service dependencies, and operational troubleshooting.
+
+This experience gives me a broader debugging perspective: I can investigate not only what the UI displays, but also the API, database, logs, and infrastructure behind it.
 
 ## Testing approach
 
@@ -78,13 +103,15 @@ This is the kind of connected thinking I bring to a QA engineering team.
 | Capability | Portfolio evidence | Typical tools |
 |---|---|---|
 | Test design | Plans, scenarios, cases, checklists | Markdown, Jira-style workflows |
-| UI automation | Critical checkout smoke test | Playwright, TypeScript |
-| API testing | REST plan, negative cases, idempotency | Postman, REST clients |
+| UI automation | Critical checkout smoke test | Python, pytest, Playwright, Selenium |
+| API testing | REST plan, negative cases, idempotency | Postman, REST clients, Python |
 | Defect reporting | Reproducible reports and triage details | Jira-style bug lifecycle |
 | Accessibility | Keyboard, focus, error, zoom, contrast review | Browser DevTools, screen readers |
 | Compatibility | Mobile device and browser matrix | Chrome, Edge, Safari, responsive viewports |
-| Release quality | Traceability, risk scoring, summary report | CI/CD quality gates |
+| Release quality | Traceability, risk scoring, summary report | Azure DevOps, Jira, CI/CD |
 | Test data | Synthetic users, products, coupons, payments | Fixtures, API setup, reset strategy |
+| Database testing | Integrity, schema, and state persistence checks | SQL, MySQL, SQLyog |
+| Systems diagnostics | Logs, services, access, and environment investigation | RHEL, Oracle Linux, Bash, Perl, Docker |
 
 ## Work samples
 
@@ -108,7 +135,7 @@ This is the kind of connected thinking I bring to a QA engineering team.
 
 ## Automation and API assets
 
-See [`automation-scripts/checkout.spec.ts`](automation-scripts/checkout.spec.ts) for a Playwright-style end-to-end test demonstrating stable locators, API-backed setup, and assertions around a critical customer journey.
+See [`automation-scripts/checkout_test.py`](automation-scripts/checkout_test.py) for a Python/pytest Playwright example, and [`automation-scripts/checkout.spec.ts`](automation-scripts/checkout.spec.ts) for a TypeScript variant.
 
 The [`postman/`](postman/) folder contains a safe, fictional REST collection for catalog, cart, and order validation. The collection uses environment variables rather than real credentials or payment data.
 
